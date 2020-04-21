@@ -18,6 +18,7 @@
 		2DCD954D1E0B4F2C00145EB5 /* bootsplashExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* bootsplashExampleTests.m */; };
 		52268A93F9A5CC764782BC1B /* libPods-bootsplashExample-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 26B5E4C427CC28C3529272C4 /* libPods-bootsplashExample-tvOS.a */; };
 		7319FDFB97A21F6D2536BAF2 /* libPods-bootsplashExample-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4ACCF1719820CBC28152EA22 /* libPods-bootsplashExample-tvOSTests.a */; };
+		CA394A3B244F3E6700D5CDE8 /* BootSplash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA394A3A244F3E6700D5CDE8 /* BootSplash.storyboard */; };
 		D58F064813208FE9B04FFEEF /* libPods-bootsplashExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F880B04F6B7307AAE3A6504 /* libPods-bootsplashExample.a */; };
 		EADFEDEEA099929787EB6551 /* libPods-bootsplashExample-bootsplashExampleTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 476CCD6014F63AC57A5BB884 /* libPods-bootsplashExample-bootsplashExampleTests.a */; };
 /* End PBXBuildFile section */
@@ -62,6 +63,7 @@
 		5D76665E252A7FD4D5A5C6B9 /* Pods-bootsplashExample-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bootsplashExample-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-bootsplashExample-tvOSTests/Pods-bootsplashExample-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		6DAE83EE58E37FAC6EBA3E1D /* Pods-bootsplashExample-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bootsplashExample-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-bootsplashExample-tvOS/Pods-bootsplashExample-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		B5D2CEE7E1F656D64FD409CE /* Pods-bootsplashExample-bootsplashExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bootsplashExample-bootsplashExampleTests.debug.xcconfig"; path = "Target Support Files/Pods-bootsplashExample-bootsplashExampleTests/Pods-bootsplashExample-bootsplashExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CA394A3A244F3E6700D5CDE8 /* BootSplash.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = BootSplash.storyboard; path = bootsplashExample/BootSplash.storyboard; sourceTree = "<group>"; };
 		E44E1835660FE7D6F3BCBE6F /* Pods-bootsplashExample-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bootsplashExample-tvOS.release.xcconfig"; path = "Target Support Files/Pods-bootsplashExample-tvOS/Pods-bootsplashExample-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		E5C41C96E77FB3AD7C36B59E /* Pods-bootsplashExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bootsplashExample.debug.xcconfig"; path = "Target Support Files/Pods-bootsplashExample/Pods-bootsplashExample.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
@@ -125,6 +127,7 @@
 		13B07FAE1A68108700A75B9A /* bootsplashExample */ = {
 			isa = PBXGroup;
 			children = (
+				CA394A3A244F3E6700D5CDE8 /* BootSplash.storyboard */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
@@ -161,7 +164,6 @@
 				2F9BB6BB7CAEBD8B3620A2DE /* Pods-bootsplashExample-tvOSTests.debug.xcconfig */,
 				5D76665E252A7FD4D5A5C6B9 /* Pods-bootsplashExample-tvOSTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -338,6 +340,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA394A3B244F3E6700D5CDE8 /* BootSplash.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
 			);
