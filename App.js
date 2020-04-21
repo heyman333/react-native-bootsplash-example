@@ -7,7 +7,7 @@
  */
 
 import React from 'react';
-import {Animated, SafeAreaView} from 'react-native';
+import {Animated, View} from 'react-native';
 import RNBootSplash from 'react-native-bootsplash';
 
 const SPLASH_IMAGE = require('./assets/tree.png');
@@ -17,11 +17,11 @@ const App = () => {
   const translateYValue = new Animated.Value(0);
 
   React.useEffect(() => {
-    RNBootSplash.hide({duration: 300});
+    RNBootSplash.hide({duration: 400});
 
     Animated.sequence([
       Animated.timing(translateYValue, {
-        delay: 300,
+        delay: 400,
         toValue: -90,
         duration: 300,
         useNativeDriver: true,
@@ -44,16 +44,14 @@ const App = () => {
   const animatedStyle = {
     width: 100,
     height: 100,
-    bottom: 5,
     opacity: opacityValue,
     transform: [{translateY: translateYValue}],
   };
 
   return (
-    <SafeAreaView
-      style={{justifyContent: 'center', alignItems: 'center', flex: 1}}>
+    <View style={{justifyContent: 'center', alignItems: 'center', flex: 1}}>
       <Animated.Image style={animatedStyle} source={SPLASH_IMAGE} />
-    </SafeAreaView>
+    </View>
   );
 };
 
