@@ -22,19 +22,19 @@ const App = () => {
     Animated.sequence([
       Animated.timing(translateYValue, {
         delay: 300,
-        toValue: -100,
-        duration: 400,
+        toValue: -90,
+        duration: 300,
         useNativeDriver: true,
       }),
       Animated.parallel([
         Animated.timing(opacityValue, {
           toValue: 0,
-          duration: 1500,
+          duration: 1000,
           useNativeDriver: true,
         }),
         Animated.timing(translateYValue, {
           toValue: 1500,
-          duration: 1500,
+          duration: 1000,
           useNativeDriver: true,
         }),
       ]),
